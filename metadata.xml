@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://dublincore.org/schemas/xmls/qdc/dc.xsd">
+
+    <!-- REPOSITORY METADATA -->
+    <siteInfo>
+        <title>South African Digital Heritage Repository</title>
+        <creator>Axolisiwe Yiba</creator>
+        <publisher>University of Cape Town (UCT) Department of Knowledge and Information Stewardship</publisher>
+        <course>LIS 5028S Project</course>
+        <date>2026</date>
+        <language>en-ZA</language>
+        <rights>Copyright © 2026 Axolisiwe Yiba. Rights held by respective contributing institutions.</rights>
+    </siteInfo>
+
+    <!-- ARTIFACT COLLECTION -->
+    <artifacts>
+
+        <!-- ITEM 1: SARAH BAARTMAN -->
+        <artifact id="item-001">
+            <dc:title>Sarah Baartman Caricature Print</dc:title>
+            <dc:creator>Unknown / Printed in London</dc:creator>
+            <dc:subject>Sarah Baartman; Colonial Exploitation; Repatriation; Hottentot Venus</dc:subject>
+            <dc:description>Archival caricature print examining the life, display, and post-colonial repatriation legacy of Sarah Baartman.</dc:description>
+            <dc:publisher>British Museum</dc:publisher>
+            <dc:date>1810</dc:date>
+            <dc:type>Image / Print</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <dc:identifier>baartman.jpg</dc:identifier>
+            <dc:source>British Museum Department of Prints and Drawings (Museum number: 1862,1217.554)</dc:source>
+            <dc:language>en</dc:language>
+            <dc:rights>Public Domain / Educational Use</dc:rights>
+        </artifact>
+
+        <!-- ITEM 2: MANDELA AUDIO -->
+        <artifact id="item-002">
+            <dc:title>Nelson Mandela Rivonia Trial Speech Recording</dc:title>
+            <dc:creator>Nelson Rolihlahla Mandela</dc:creator>
+            <dc:subject>Nelson Mandela; Rivonia Trial; Anti-Apartheid Movement; Speech; Human Rights</dc:subject>
+            <dc:description>Historic sound recording excerpt of Nelson Mandela's 'I Am Prepared to Die' speech delivered from the dock during the Rivonia Trial.</dc:description>
+            <dc:publisher>National Archives of South Africa (NASA)</dc:publisher>
+            <dc:date>1964-04-20</dc:date>
+            <dc:type>Sound / Audio Recording</dc:type>
+            <dc:format>audio/mp3</dc:format>
+            <dc:identifier>mandela.mp3</dc:identifier>
+            <dc:source>National Archives and Records Service of South Africa (Pretoria Supreme Court Record Group)</dc:source>
+            <dc:language>en</dc:language>
+            <dc:rights>State Copyright / Educational Archive</dc:rights>
+        </artifact>
+
+        <!-- ITEM 3: THE SPRINGBOK -->
+        <artifact id="item-003">
+            <dc:title>The Springbok (Antidorcas marsupialis)</dc:title>
+            <dc:creator>South African National Parks (SANParks)</dc:creator>
+            <dc:subject>Springbok; Antidorcas marsupialis; Khoisan Cosmology; National Symbol; South Africa Wildlife</dc:subject>
+            <dc:description>Explores the biological profile of Antidorcas marsupialis, its role in Khoisan hunting heritage, and its recognition as South Africa's national animal emblem.</dc:description>
+            <dc:publisher>South African National Parks (SANParks)</dc:publisher>
+            <dc:date>2026</dc:date>
+            <dc:type>Physical Object / Biological Symbol</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <dc:identifier>khoisan.jpg</dc:identifier>
+            <dc:source>South African National Parks Archives</dc:source>
+            <dc:language>en</dc:language>
+            <dc:rights>Educational Use / SANParks</dc:rights>
+        </artifact>
+
+        <!-- ITEM 4: GOLDEN RHINO -->
+        <artifact id="item-004">
+            <dc:title>Golden Rhino of Mapungubwe</dc:title>
+            <dc:creator>Mapungubwe Artisans</dc:creator>
+            <dc:subject>Mapungubwe; Pre-colonial Archaeology; Gold Foil; African Trade; Royal Leadership</dc:subject>
+            <dc:description>A medieval gold-foil archaeological artifact from the Kingdom of Mapungubwe, symbolizing pre-colonial African trade, metallurgy, and statehood.</dc:description>
+            <dc:publisher>University of Pretoria Museums</dc:publisher>
+            <dc:date>1220 - 1290 AD</dc:date>
+            <dc:type>Physical Object / Archaeological Artifact</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <dc:identifier>mapungubwe.jpg</dc:identifier>
+            <dc:source>Mapungubwe Collection, University of Pretoria Museums</dc:source>
+            <dc:language>en</dc:language>
+            <dc:rights>University of Pretoria Museums / National Heritage Asset</dc:rights>
+        </artifact>
+
+        <!-- ITEM 5: ROBBEN ISLAND MAP -->
+        <artifact id="item-005">
+            <dc:title>Topographical Map of Robben Island</dc:title>
+            <dc:creator>Chief Directorate: National Geo-spatial Information (NGI)</dc:creator>
+            <dc:subject>Robben Island; Topography; Cartography; Political Prison; World Heritage Site</dc:subject>
+            <dc:description>Topographical mapping depicting the spatial geography, natural isolation, and penal prison history of Robben Island in Table Bay.</dc:description>
+            <dc:publisher>Department of Agriculture, Land Reform and Rural Development</dc:publisher>
+            <dc:date>2020</dc:date>
+            <dc:type>Image / Cartographic Map</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <dc:identifier>robbenisland.jpg</dc:identifier>
+            <dc:source>Chief Directorate: National Geo-spatial Information (NGI Map Series 3318CD)</dc:source>
+            <dc:language>en</dc:language>
+            <dc:rights>Government Printer / Public Record</dc:rights>
+        </artifact>
+
+        <!-- BACKGROUND IMAGE ASSET -->
+        <artifact id="asset-001">
+            <dc:title>Colton's Africa (Southern Sheet) Map</dc:title>
+            <dc:creator>G.W. Colton</dc:creator>
+            <dc:subject>Historical Map; Southern Africa; Cartography; Archival Background</dc:subject>
+            <dc:description>19th-century historical map of Southern Africa used as the thematic background graphic across the repository website.</dc:description>
+            <dc:publisher>J.H. Colton &amp; Co.</dc:publisher>
+            <dc:date>1855</dc:date>
+            <dc:type>Image / Cartographic Asset</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <dc:identifier>background.jpg</dc:identifier>
+            <dc:source>David Rumsey Map Collection</dc:source>
+            <dc:language>en</dc:language>
+            <dc:rights>Public Domain</dc:rights>
+        </artifact>
+
+    </artifacts>
+</repository>

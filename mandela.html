@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson Mandela Rivonia Trial Audio | Digital Heritage Repository</title>
+    <style>
+        :root { 
+            --primary: #1b365d; 
+            --accent: #a00000; 
+            --gold: #d4af37; 
+            --bg: #f8f9fa; 
+            --card-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: var(--bg); 
+            color: black; 
+            line-height: 1.6; 
+            min-height: 100vh;
+            /* Archival Map Background (Colton, 1855; DKIS, 2026) */
+            background: url('background.jpg') center/cover fixed no-repeat;
+        }
+
+        .banner { 
+            background: url('background.jpg') center/cover fixed no-repeat;
+            color: white; 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--gold); 
+        }
+
+        .banner h1 { margin: 0; font-size: 2.2rem; }
+
+        nav { 
+            background: #112238; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav a { 
+            color: white; 
+            padding: 12px 16px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+        }
+
+        nav a:hover, nav a.active { background: var(--accent); }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+
+        .artifact-box { 
+            background: var(--card-bg); 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            padding: 25px; 
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05); 
+        }
+
+        /* Dual Audio Player Styling */
+        .media-container {
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 25px;
+        }
+
+        .audio-player-block {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .audio-player-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: #333;
+            margin-top: 6px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .metadata-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .metadata-table th, .metadata-table td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 0.9rem; }
+        .metadata-table th { background-color: var(--primary); color: white; width: 25%; }
+
+        .back-link { 
+            display: inline-block; 
+            margin-top: 25px; 
+            color: white; 
+            background-color: var(--primary); 
+            padding: 10px 18px; 
+            border-radius: 4px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+
+        .back-link:hover { background-color: var(--accent); }
+
+        footer { 
+            background: var(--primary); 
+            color: white; 
+            text-align: center; 
+            padding: 15px; 
+            margin-top: 40px; 
+            font-size: 0.85rem; 
+            border-top: 3px solid var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="banner">
+        <h1>Artifact Record: Nelson Mandela Rivonia Trial Audio</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="baartman.html">Sarah Baartman</a>
+        <a href="mandela.html" class="active">Mandela Audio</a>
+        <a href="springbok.html">The Springbok</a>
+        <a href="mapungubwe.html">Golden Rhino</a>
+        <a href="robbenisland.html">Robben Island Map</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <div class="container">
+        <div class="artifact-box">
+            <h2>Nelson Mandela's Address from the Dock (20 April 1964)</h2>
+            
+            <div class="media-container">
+                <!-- First Audio Block: audio.mp3 -->
+                <div class="audio-player-block">
+                    <audio controls onplay="stopOtherAudio(this)">
+                        <source src="audio.mp3" type="audio/mpeg">
+                        <source src="audio.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="caption">Full speech audio recording (Source: NARS &amp; INA, 2018)</div>
+                </div>
+
+                <!-- Second Audio Block: audio1.mp3 -->
+                <div class="audio-player-block">
+                    <audio controls onplay="stopOtherAudio(this)">
+                        <source src="audio1.mp3" type="audio/mpeg">
+                        <source src="audio1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="caption">"I am Prepared to Die" excerpt audio recording (Source: NARS &amp; INA, 2018)</div>
+                </div>
+            </div>
+
+            <h3>Historical Description &amp; Context</h3>
+            <p>On 20 April 1964, during the Rivonia Trial at the Palace of Justice in Pretoria, Nelson Mandela delivered his famous three-hour statement from the dock as the first accused in State v. Nelson Mandela and Others (Mandela, 1964:1; Frankel, 2011:88). Speaking on behalf of his co-accused ANC and Umkhonto we Sizwe (MK) leadership, Mandela articulated the socio-political grievances of South Africa's disenfranchised majority, explaining the transition from non-violent resistance to armed struggle (Mandela, 1964:4-12; Lodge, 2011:145).</p>
+            <p>The speech concluded with his iconic declaration of commitment to a democratic and free society, stating that it was an ideal for which he was prepared to die (Mandela, 1964:30; Sampson, 1999:192). The trial proceedings were recorded using Dictabelt technology; these original analog belts were preserved by the National Archives and Records Service of South Africa (NARS) and meticulously digitised and restored in partnership with the French National Audiovisual Institute (INA) (NARS &amp; INA, 2018; UNESCO, 2014).</p>
+
+            <h3>Dublin Core Metadata Profile</h3>
+            <table class="metadata-table">
+                <tr><th>DC Title</th><td>Statement from the Dock at the Rivonia Trial (Nelson Mandela) (Mandela, 1964; NARS &amp; INA, 2018)</td></tr>
+                <tr><th>DC Creator</th><td>Nelson Rolihlahla Mandela (1918–2013) (Mandela, 1964)</td></tr>
+                <tr><th>DC Date</th><td>1964-04-20 (Mandela, 1964)</td></tr>
+                <tr><th>DC Type</th><td>Sound Recording / Historical Speech (DCMI, 2020)</td></tr>
+                <tr><th>DC Subject</th><td>Rivonia Trial; Anti-Apartheid Struggle; Human Rights; Political Trials (Lodge, 2011; UNESCO, 2014)</td></tr>
+                <tr><th>DC Source</th><td>National Archives and Records Service of South Africa (NARS), Pretoria (NARS &amp; INA, 2018)</td></tr>
+                <tr><th>DC Publisher</th><td>National Archives and Records Service of South Africa (NARS) &amp; INA (NARS &amp; INA, 2018)</td></tr>
+                <tr><th>DC Rights</th><td>Public Domain Historical Record / National Heritage Asset (NARS &amp; INA, 2018; Republic of South Africa, 1996)</td></tr>
+                <tr><th>DC Identifier</th><td>NARS Dictabelt Collection / Rivonia Trial Case No. CC 88/1963 (NARS &amp; INA, 2018)</td></tr>
+            </table>
+
+            <a href="index.html" class="back-link">&larr; Return to Homepage</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>LIS 5028S Project | University of Cape Town Department of Knowledge &amp; Information Stewardship | Axolisiwe Yiba (Yiba, 2026)</p>
+    </footer>
+
+    <!-- Script to ensure exclusive playback -->
+    <script>
+        function stopOtherAudio(currentAudio) {
+            const allAudios = document.querySelectorAll('audio');
+            allAudios.forEach(audio => {
+                if (audio !== currentAudio) {
+                    audio.pause();
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

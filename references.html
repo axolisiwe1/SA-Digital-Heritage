@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References &amp; Archival Sources | Digital Heritage Repository</title>
+    <style>
+        :root { 
+            --primary: #1b365d; 
+            --accent: #a00000; 
+            --gold: #d4af37; 
+            --bg: #f8f9fa; 
+            --card-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: url('background.jpg') center/cover fixed no-repeat;
+            color: black; 
+            line-height: 1.6; 
+            min-height: 100vh;
+        }
+
+        header { 
+            background: url('background.jpg') center/cover fixed no-repeat; 
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--gold); 
+        }
+
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin: 5px 0 0 0; font-size: 1rem; color: #f0f0f0; }
+
+        nav { 
+            background: #112238; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav a { 
+            color: white; 
+            padding: 12px 16px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+        }
+
+        nav a:hover, nav a.active { background: var(--accent); }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+
+        .content-box { 
+            background: var(--card-bg); 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            padding: 30px; 
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05); 
+        }
+
+        h2 { 
+            color: var(--primary); 
+            margin-top: 0; 
+            border-bottom: 2px solid var(--gold); 
+            padding-bottom: 8px; 
+            font-size: 1.6rem;
+        }
+
+        /* UCT Harvard Reference Style - Hanging Indent */
+        .reference-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 20px;
+        }
+
+        .reference-list li {
+            padding-left: 2em;
+            text-indent: -2em;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .back-link { 
+            display: inline-block; 
+            margin-top: 25px; 
+            color: white; 
+            background-color: var(--primary); 
+            padding: 10px 18px; 
+            border-radius: 4px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+
+        .back-link:hover { background-color: var(--accent); }
+
+        footer { 
+            background: var(--primary); 
+            color: white; 
+            text-align: center; 
+            padding: 15px; 
+            margin-top: 40px; 
+            font-size: 0.85rem; 
+            border-top: 3px solid var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>South African Digital Heritage Repository</h1>
+        <p>A digital archive preserving foundational historical records, indigenous memory, and cultural heritage.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="baartman.html">Sarah Baartman</a>
+        <a href="mandela.html">Mandela Audio</a>
+        <a href="khoisan.html">The Springbok</a>
+        <a href="mapungubwe.html">Golden Rhino</a>
+        <a href="robbenisland.html">Robben Island Map</a>
+        <a href="references.html" class="active">References</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-box">
+            
+            <h2>Reference List</h2>
+
+            <ul class="reference-list">
+                <li>Bleek, W.H.I. and Lloyd, L.C. 1911. <i>Specimens of Bushman Folklore</i>. London: George Allen &amp; Company.</li>
+
+                <li>British Museum. 1810. <i>A Sartjee, the Hottentot Venus</i> [Print/Caricature]. London: British Museum Department of Prints and Drawings. Museum number: 1862,1217.554.</li>
+
+                <li>Chief Directorate: National Geo-spatial Information (NGI). 2020. <i>Topographical Map Series: Robben Island (3318CD)</i>. Mowbray: Department of Agriculture, Land Reform and Rural Development.</li>
+
+                <li>Colton, G.W. 1855. <i>Colton's Africa (Southern Sheet)</i> [Map/Background Image]. New York: J.H. Colton &amp; Co. Available: David Rumsey Map Collection [2026, September 10].</li>
+
+                <li>Gordon, R.J. 1992. <i>The Bushman Myth: The Making of a Namibian Underclass</i>. Boulder: Westview Press.</li>
+
+                <li>National Archives of South Africa (NASA). 1964. <i>State v. Nelson Mandela and Others (Rivonia Trial sound recordings)</i> [Audio file]. Pretoria: National Archives and Records Service of South Africa. Record Group: Pretoria Supreme Court.</li>
+
+                <li>Republic of South Africa. 1999. <i>World Heritage Convention Act, No. 49 of 1999</i>. Government Gazette, 414(20717). Pretoria: Government Printer.</li>
+
+                <li>Skotnes, P. 2007. <i>Claim to the Country: The Archive of Lucy Lloyd and Wilhelm Bleek</i>. Cape Town: Jacana Media &amp; Ohio University Press.</li>
+
+                <li>South African National Parks (SANParks). 2026. <i>Species Profile: Springbok (Antidorcas marsupialis)</i> [Online]. Available: https://www.sanparks.org [2026, September 10].</li>
+
+                <li>University of Pretoria Museums. 2022. <i>The Mapungubwe Collection: The Golden Rhino</i> [Online]. Pretoria: University of Pretoria. Available: https://www.up.ac.za/museums [2026, September 10].</li>
+            </ul>
+
+            <a href="index.html" class="back-link">&larr; Return to Homepage</a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>LIS 5028S Project | University of Cape Town Department of Knowledge &amp; Information Stewardship | Axolisiwe Yiba (Yiba, 2026)</p>
+    </footer>
+
+</body>
+</html>

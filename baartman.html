@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Baartman Portrait | Digital Heritage Repository</title>
+    <style>
+        :root { 
+            --primary: #1b365d; 
+            --accent: #a00000; 
+            --gold: #d4af37; 
+            --bg: #f8f9fa;
+            --card-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: black; 
+            line-height: 1.6;
+            min-height: 100vh;
+            /* Archival Map Background (Colton, 1855; DKIS, 2026) */
+            background: url('background.jpg') center/cover fixed no-repeat;
+        }
+
+        .banner { 
+            background: url('background.jpg') center/cover fixed no-repeat;
+            color: white; 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--gold); 
+        }
+
+        .banner h1 { margin: 0; font-size: 2.2rem; }
+
+        nav { 
+            background: #112238; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav a { 
+            color: white; 
+            padding: 12px 16px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+        }
+
+        nav a:hover, nav a.active { background: var(--accent); }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+
+        .artifact-box { 
+            background: var(--card-bg); 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            padding: 25px; 
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05); 
+        }
+
+        .media-container {
+            text-align: center;
+            background: #ffffff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 25px;
+        }
+
+        .media-container img {
+            max-width: 100%;
+            max-height: 450px;
+            height: auto;
+            border-radius: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .metadata-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .metadata-table th, .metadata-table td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 0.9rem; }
+        .metadata-table th { background-color: var(--primary); color: white; width: 25%; }
+
+        .back-link { 
+            display: inline-block; 
+            margin-top: 25px; 
+            color: white; 
+            background-color: var(--primary); 
+            padding: 10px 18px; 
+            border-radius: 4px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+
+        .back-link:hover { background-color: var(--accent); }
+
+        footer { 
+            background: var(--primary); 
+            color: white; 
+            text-align: center; 
+            padding: 15px; 
+            margin-top: 40px; 
+            font-size: 0.85rem; 
+            border-top: 3px solid var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="banner">
+        <h1>Artifact Record: Sarah Baartman Portrait</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="baartman.html" class="active">Sarah Baartman</a>
+        <a href="mandela.html">Mandela Audio</a>
+        <a href="springbok.html">The Springbok</a>
+        <a href="mapungubwe.html">Golden Rhino</a>
+        <a href="robbenisland.html">Robben Island Map</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <div class="container">
+        <div class="artifact-box">
+            <h2>Portrait Print of Sarah Baartman (1810)</h2>
+            
+            <div class="media-container">
+                <img src="images (1).jpg" width="300" height="400" alt="Historical Portrait Print of Sarah Baartman">
+                <div class="caption">Historical Portrait Print of Sarah Baartman (Source: British Museum, 2022; Ref: 1917,1208.3712)</div>
+            </div>
+
+            <h3>Historical Description &amp; Context</h3>
+            <p>Sarah Baartman was a Khoikhoi woman born around 1789 near the Gamtoos River in the Eastern Cape (Crais &amp; Scully, 2009:18). Taken to Europe under deceptive contracts in 1810, she was exhibited in London and Paris as the "Hottentot Venus" under conditions of extreme racial and gendered exploitation (Qureshi, 2004:234; Holmes, 2007). Graphic prints, aquatints, and caricatures produced during this era reflect the scientific racism and imperial gaze dominant in 19th-century Britain and Europe (Davids, 2018:45).</p>
+            <p>This specific portrait print is preserved within the Department of Prints and Drawings at the British Museum (Registration Number: 1917,1208.3712) (British Museum, 2022). Bequeathed by Lady Charlotte Schreiber in 1917, the work depicts Baartman in full length, wearing costume elements associated with her public exhibitions in London (British Museum, 2022). Such holdings in imperial museum collections illustrate how visual culture was deployed to construct racialized narratives in 19th-century Britain (Qureshi, 2004:240).</p>
+            <p>Following South Africa's democratic transition, President Nelson Mandela formally requested the repatriation of her remains from the Musée de l'Homme in Paris (Cruywagen, 2010:12). In May 2002, her remains were buried at Hankey in the Gamtoos Valley, establishing her memory as an enduring symbol of indigenous identity, dignity, and anti-colonial restitution (Republic of South Africa, 2002).</p>
+
+            <h3>Dublin Core Metadata Profile</h3>
+            <table class="metadata-table">
+                <tr><th>DC Title</th><td>A portrait of Saartjie Baartman, 'The Hottentot Venus' (British Museum, 2022)</td></tr>
+                <tr><th>DC Creator</th><td>Anonymous / British Printmaker (after Léon de Wailly style) (British Museum, 2022)</td></tr>
+                <tr><th>DC Date</th><td>1810–1811 (British Museum, 2022)</td></tr>
+                <tr><th>DC Type</th><td>Image / Print (Etching and Aquatint) (DCMI, 2020)</td></tr>
+                <tr><th>DC Subject</th><td>Khoisan History; British Colonial Spectacle; Racialized Imagery; Indigenous Heritage (Davids, 2018:50)</td></tr>
+                <tr><th>DC Source</th><td>British Museum, London (Department of Prints and Drawings) (British Museum, 2022)</td></tr>
+                <tr><th>DC Publisher</th><td>British Museum Department of Prints and Drawings (British Museum, 2022)</td></tr>
+                <tr><th>DC Rights</th><td>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) / British Museum Licensing (British Museum, 2022)</td></tr>
+                <tr><th>DC Identifier</th><td>1917,1208.3712 (British Museum, 2022)</td></tr>
+            </table>
+
+            <a href="index.html" class="back-link">&larr; Return to Homepage</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>LIS 5028S Project | University of Cape Town Department of Knowledge &amp; Information Stewardship | Axolisiwe Yiba (Yiba, 2026)</p>
+    </footer>
+
+</body>
+</html>

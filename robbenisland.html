@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robben Island Prison Layout & Map | Digital Heritage Repository</title>
+    <style>
+        :root { 
+            --primary: #1b365d; 
+            --accent: #a00000; 
+            --gold: #d4af37; 
+            --bg: #f8f9fa; 
+            --card-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: var(--bg); 
+            color: black; 
+            line-height: 1.6; 
+            min-height: 100vh;
+            /* Archival Map Background (Colton, 1855; DKIS, 2026) */
+            background: url('background.jpg') center/cover fixed no-repeat;
+        }
+
+        .banner { 
+            background: url('background.jpg') center/cover fixed no-repeat; 
+            color: white; 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--gold); 
+        }
+
+        .banner h1 { margin: 0; font-size: 2.2rem; }
+
+        nav { 
+            background: #112238; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav a { 
+            color: white; 
+            padding: 12px 16px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+        }
+
+        nav a:hover, nav a.active { background: var(--accent); }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+
+        .artifact-box { 
+            background: var(--card-bg); 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            padding: 25px; 
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05); 
+        }
+
+        /* Dual Media Grid System */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .media-card {
+            background: #ffffff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Ensures both images are identically sized */
+        .media-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .caption {
+            font-size: 0.85rem;
+            color: #333333;
+            margin-top: 10px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .metadata-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .metadata-table th, .metadata-table td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 0.9rem; }
+        .metadata-table th { background-color: var(--primary); color: white; width: 25%; }
+
+        .back-link { 
+            display: inline-block; 
+            margin-top: 25px; 
+            color: white; 
+            background-color: var(--primary); 
+            padding: 10px 18px; 
+            border-radius: 4px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+
+        .back-link:hover { background-color: var(--accent); }
+
+        footer { 
+            background: var(--primary); 
+            color: white; 
+            text-align: center; 
+            padding: 15px; 
+            margin-top: 40px; 
+            font-size: 0.85rem; 
+            border-top: 3px solid var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="banner">
+        <h1>Artifact Record: Robben Island Maximum Security Prison Layout &amp; Map</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="baartman.html">Sarah Baartman</a>
+        <a href="mandela.html">Mandela Audio</a>
+        <a href="springbok.html">The Springbok</a>
+        <a href="mapungubwe.html">Golden Rhino</a>
+        <a href="robbenisland.html" class="active">Robben Island Map</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <div class="container">
+        <div class="artifact-box">
+
+            <h2>Architectural Plan &amp; Cell Layout: Maximum Security Prison</h2>
+
+            <div class="media-grid">
+                <div class="media-card">
+                    <img src="robbenisland.jpg" alt="Architectural Plan and Map of Robben Island Maximum Security Prison Layout">
+                    <div class="caption">Archival Map: Maximum Security Prison Layout &amp; Isolation Block (Source: Robben Island Museum Archives, 2020; Ref: RIM-ARCH-MAP-MSP-05)</div>
+                </div>
+                <div class="media-card">
+                    <img src="image.jpg" alt="Photograph of Cell 5 in B-Section where Nelson Mandela was imprisoned">
+                    <div class="caption">Interior Photograph: Cell 5, B-Section (Nelson Mandela's Cell, 1964–1982) (Source: Robben Island Museum Archives, 2020)</div>
+                </div>
+            </div>
+
+            <h3>Historical Description &amp; Spatial Layout</h3>
+            <p>Constructed in the early 1960s using stone quarried on the island by political and common-law prisoners, the Maximum Security Prison (MSP) on Robben Island was architecturally engineered to enforce psychological isolation, strict surveillance, and physical control (Deacon, 1996:18; Buntman, 2003:45). The complex comprises four H-block General Sections (holding up to 52 inmates per communal cell) and a U-shaped Isolation Block containing approximately 90 individual single cells (Robben Island Museum, 2020; UNESCO, 1999).</p>
+
+            <p>The Isolation Block was subdivided into distinct wings (A, B, and C) separated by high masonry walls to prevent contact between political leaders and the broader prison population (Deacon, 1996:22). <strong>Section B</strong>, often referred to as the <em>Leadership Section</em>, housed prominent anti-apartheid movement figures—including Walter Sisulu, Govan Mbeki, Ahmed Kathrada, and Nelson Mandela (Mandela, 1994:380; Kathrada, 2004:95). Security featured five guard towers, continuous high-wall perimeters, and an elevated catwalk overlooking the B-Section quadrangle courtyard where prisoners performed manual labor under constant armed oversight (Buntman, 2003:62).</p>
+
+            <p><strong>Cell 5 of B-Section</strong> is the most historically significant cell within the compound. Measuring approximately 2.1 by 2.4 meters (7 feet by 8 feet), it housed Nelson Mandela for 18 of his 27 years of imprisonment (1964–1982) (Mandela, 1994:385; Robben Island Museum, 2020). The austere cell contained only a thin sleeping mat on the concrete floor, a small wooden table, a slop bucket for sanitation, and a single high, barred window overlooking the exercise courtyard (Kathrada, 2004:102). Despite these oppressive spatial constraints, B-Section became a center of intellectual debate, political strategy, and covert education—earning the prison the informal moniker "Robben Island University" (Buntman, 2003:110; Deacon, 1996:30).</p>
+
+            <h3>Dublin Core Metadata Profile</h3>
+            <table class="metadata-table">
+                <tr><th>DC Title</th><td>Architectural Plan and Cell 5 Spatial Layout of Robben Island Maximum Security Prison (Deacon, 1996; Robben Island Museum, 2020)</td></tr>
+                <tr><th>DC Creator</th><td>Department of Public Works (Apartheid Administration) / Digitized by Robben Island Museum (Robben Island Museum, 2020)</td></tr>
+                <tr><th>DC Date</th><td>1964–1991 (Contextual Period) (Buntman, 2003)</td></tr>
+                <tr><th>DC Type</th><td>Image / Architectural Diagram &amp; Interior Photograph (DCMI, 2020)</td></tr>
+                <tr><th>DC Subject</th><td>Robben Island; Maximum Security Prison; Section B; Cell 5; Nelson Mandela; Apartheid Architectural Control; Political Imprisonment (Deacon, 1996; UNESCO, 1999)</td></tr>
+                <tr><th>DC Source</th><td>Robben Island Museum Archives &amp; Information Research Department (Robben Island Museum, 2020)</td></tr>
+                <tr><th>DC Publisher</th><td>Robben Island Museum / UNESCO World Heritage Repository (UNESCO, 1999; Robben Island Museum, 2020)</td></tr>
+                <tr><th>DC Rights</th><td>Robben Island Museum / National Heritage Institution (Republic of South Africa, 1999; Robben Island Museum, 2020)</td></tr>
+                <tr><th>DC Identifier</th><td>RIM-ARCH-MAP-MSP-05 (Robben Island Museum Archives, 2020)</td></tr>
+            </table>
+
+            <a href="index.html" class="back-link">&larr; Return to Homepage</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>LIS 5028S Project | University of Cape Town Department of Knowledge &amp; Information Stewardship | Axolisiwe Yiba (Yiba, 2026)</p>
+    </footer>
+
+</body>
+</html>
