@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South African Digital Heritage Repository | Home</title>
+    <style>
+        :root { 
+            --primary: #1b365d; 
+            --accent: #a00000; 
+            --gold: #d4af37; 
+            --bg: #f8f9fa; 
+            --card-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: url('background.jpg') center/cover fixed no-repeat;
+            color: black; 
+            line-height: 1.6; 
+            min-height: 100vh;
+        }
+
+        header { 
+            background: url('background.jpg') center/cover fixed no-repeat; 
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--gold); 
+        }
+
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin: 5px 0 0 0; font-size: 1rem; color: #f0f0f0; }
+
+        nav { 
+            background: #112238; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav a { 
+            color: white; 
+            padding: 12px 16px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+        }
+
+        nav a:hover, nav a.active { background: var(--accent); }
+
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+
+        .welcome-box { 
+            background: var(--card-bg); 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            padding: 25px; 
+            margin-bottom: 30px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05); 
+        }
+
+        .welcome-box h2 {
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 8px;
+        }
+
+        /* Responsive Grid Layout */
+        .artifact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .artifact-card {
+            background: var(--card-bg);
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .artifact-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .artifact-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.25rem;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 6px;
+        }
+
+        .artifact-card p {
+            font-size: 0.95rem;
+            color: #333;
+            flex-grow: 1;
+        }
+
+        .artifact-meta {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn-link:hover {
+            background-color: var(--accent);
+        }
+
+        footer { 
+            background: var(--primary); 
+            color: white; 
+            text-align: center; 
+            padding: 15px; 
+            margin-top: 40px; 
+            font-size: 0.85rem; 
+            border-top: 3px solid var(--gold);
+        }
+
+        footer a { color: var(--gold); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header role="banner">
+        <h1>South African Digital Heritage Repository</h1>
+        <p>A digital archive preserving foundational historical records, indigenous memory, and cultural heritage.</p>
+    </header>
+
+    <nav aria-label="Primary Navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="baartman.html">Sarah Baartman</a>
+        <a href="mandela.html">Mandela Audio</a>
+        <a href="Springbok.html">The Springbok</a>
+        <a href="mapungubwe.html">Golden Rhino</a>
+        <a href="robbenisland.html">Robben Island Map</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <main class="container">
+        
+        <section class="welcome-box">
+            <h2>Welcome to the Digital Heritage Repository</h2>
+            <p>Welcome to the digital curation repository. This curated site features five primary digital artifacts representing essential indigenous, archival, and political histories of South Africa Sourced directly from key archival institutions--including the National Archives and Records Service of South Africa, Univerity of Pretoria Museum, The British Museum, and Robben Island Archives--each item is presented with Dublin Core metadata and contextual research.</p>
+        </section>
+
+        <!-- Static Artifact Grid Cards -->
+        <section class="artifact-grid">
+
+            <!-- Card 1 -->
+            <article class="artifact-card">
+                <div>
+                    <h3>Sarah Baartman Caricature Print</h3>
+                    <p>Archival caricature print examining the life, display, and post-colonial repatriation legacy of Sarah Baartman.</p>
+                </div>
+                <div>
+                    <div class="artifact-meta"><strong>Source:</strong> British Museum (1810)</div>
+                    <a href="baartman.html" class="btn-link">View Record &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="artifact-card">
+                <div>
+                    <h3>Nelson Mandela Rivonia Trial Speech Recording</h3>
+                    <p>Historic sound recording excerpt of Nelson Mandela's 'I Am Prepared to Die' speech delivered from the dock during the Rivonia Trial.</p>
+                </div>
+                <div>
+                    <div class="artifact-meta"><strong>Source:</strong> National Archives of South Africa (1964)</div>
+                    <a href="mandela.html" class="btn-link">View Record &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="artifact-card">
+                <div>
+                    <h3>The Springbok (Antidorcas marsupialis)</h3>
+                    <p>Explores the biological profile of Antidorcas marsupialis, its role in Khoisan hunting heritage, and its recognition as South Africa's national animal emblem.</p>
+                </div>
+                <div>
+                    <div class="artifact-meta"><strong>Source:</strong> SANParks (2026)</div>
+                    <a href="Springbok.html" class="btn-link">View Record &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="artifact-card">
+                <div>
+                    <h3>Golden Rhino of Mapungubwe</h3>
+                    <p>A medieval gold-foil archaeological artifact from the Kingdom of Mapungubwe, symbolizing pre-colonial African trade, metallurgy, and statehood.</p>
+                </div>
+                <div>
+                    <div class="artifact-meta"><strong>Source:</strong> University of Pretoria Museums (1220–1290 AD)</div>
+                    <a href="mapungubwe.html" class="btn-link">View Record &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="artifact-card">
+                <div>
+                    <h3>Topographical Map of Robben Island</h3>
+                    <p>Topographical mapping depicting the spatial geography, natural isolation, and penal prison history of Robben Island in Table Bay.</p>
+                </div>
+                <div>
+                    <div class="artifact-meta"><strong>Source:</strong> Chief Directorate: National Geo-spatial Information (2020)</div>
+                    <a href="robbenisland.html" class="btn-link">View Record &rarr;</a>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+    <p>
+        LIS 5028S Project | University of Cape Town Department of Knowledge &amp; Information Stewardship | Axolisiwe Yiba (Yiba, 2026) | 
+        <a href="metadata.xml" target="_blank" rel="noopener">View Metadata XML</a>
+    </p>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Fetch the metadata.xml file
+        fetch('metadata.xml')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("HTTP error " + response.status);
+                }
+                return response.text();
+            })
+            .then(xmlString => {
+                // Parse the XML text into an XML DOM document
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+
+                // Get all artifact tags
+                const artifacts = xmlDoc.getElementsByTagName("artifact");
+                const container = document.getElementById("xml-display-container");
+
+                if (!container) return;
+                container.innerHTML = ""; // Clear existing placeholder content
+
+                // Loop through each artifact entry in the XML
+                Array.from(artifacts).forEach(artifact => {
+                    const id = artifact.getAttribute("id");
+
+                    // Safe extraction function for Dublin Core elements
+                    const getDC = (tagName) => {
+                        const el = artifact.getElementsByTagName(`dc:${tagName}`)[0] || 
+                                   artifact.getElementsByTagName(tagName)[0];
+                        return el ? el.textContent.trim() : "N/A";
+                    };
+
+                    const title = getDC("title");
+                    const creator = getDC("creator");
+                    const date = getDC("date");
+                    const publisher = getDC("publisher");
+                    const description = getDC("description");
+
+                    // Create HTML layout for parsed metadata
+                    const itemCard = document.createElement("article");
+                    itemCard.className = "parsed-artifact-card";
+                    itemCard.innerHTML = `
+                        <h3>${title}</h3>
+                        <p><strong>Description:</strong> ${description}</p>
+                        <p><strong>Creator:</strong> ${creator} | <strong>Date:</strong> ${date}</p>
+                        <p><strong>Publisher:</strong> ${publisher}</p>
+                        <small><strong>Identifier:</strong> ${id}</small>
+                        <hr>
+                    `;
+
+                    container.appendChild(itemCard);
+                });
+            })
+            .catch(error => {
+                console.error("Error parsing XML metadata:", error);
+                const container = document.getElementById("xml-display-container");
+                if (container) {
+                    container.innerHTML = "<p style='color:red;'>Unable to parse metadata.xml. Please ensure the file exists and is running on a web server environment.</p>";
+                }
+            });
+    });
+</script>
+
+</body>
+</html>
